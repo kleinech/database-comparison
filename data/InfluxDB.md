@@ -30,4 +30,4 @@ InfluxDB is a data store for storing timestamped data.
 - https://github.com/influxdata/influxdb
 
 ## License
-- MPL-2.0
+- MIT
