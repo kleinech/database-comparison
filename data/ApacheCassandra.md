@@ -1,0 +1,30 @@
+# Apache Cassandra - http://cassandra.apache.org
+Apache Cassandra is a free and open-source distributed NoSQL database management system.
+
+## Scalability
+- highly-scalable
+    - Partitioning across multiple machines in an application-transparent matter. Automatic partition as machines are added and removed from cluster.
+
+## Availability
+- Replication
+
+## Latency
+- low
+    - No atomicity of transactions
+    
+## User Management
+- RBAC
+
+## Communication
+- C2N SSL
+- N2N SSL
+
+## Features
+- Row store
+- Close to SQL
+
+## Repository
+- https://github.com/apache/cassandra
+
+## License
+- Apache-2.0
