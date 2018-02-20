@@ -1,0 +1,148 @@
+title: Database-Comparison
+subtitle: Comparison of Databases
+selectTitle: Criteria
+tableTitle: Comparison of Examples
+repository: 'https://github.com/ultimate-comparisons/ultimate-comparison-BASE.git'
+details:
+  header:
+    nameRef: id
+    urlRef: inline
+  body:
+    title: Description
+    bodyRef: description
+citation:
+  csl: acm-siggraph.csl
+  bib: literature.bib
+criteria:
+  - id:
+      name: Name
+      search: false
+      table: true
+      detail: false
+      type: url
+  - description:
+      name: Description
+      search: false
+      detail: false
+      table: false
+      type: markdown
+  - Scalability:
+      description: Scalability of database.
+      placeholder: Select scalability of ...
+      andSearch: false
+      type: label
+  - Availability:
+      type: label
+  - Latency:
+      type: label
+  - User Management:
+      type: label
+      values:
+        RBAC:
+          description: Role based access constrol
+  - Communication:
+      type: label
+      values:
+        C2N SSL:
+          description: Client-to-node encrypted communication
+        N2N SSL:
+          description: Node-to-node encrypted communication
+  - Features:
+      type: label
+  - Repository:
+      search: false
+      table: false
+      detail: false
+      type: repository
+  - License:
+      table: false
+      andSearch: false
+      values:
+        Apache-2.0:
+          description: '[Apache-2.0](https://spdx.org/licenses/Apache-2.0.html)'
+        MIT:
+          description: '[MIT](https://spdx.org/licenses/MIT.html)'
+        MPL-2.0:
+          description: '[MPL-2.0](https://spdx.org/licenses/MPL-2.0.html)'
+autoCriteria:
+  Scalability:
+    values:
+      highly-scalable: {}
+      Cluster: {}
+  Availability:
+    values:
+      Replication: {}
+      highly available: {}
+      highly-available: {}
+  Latency:
+    values:
+      low: {}
+  Features:
+    values:
+      Row store: {}
+      Close to SQL: {}
+      TSDB: {}
+      Tag Support: {}
+  User Management:
+    values:
+      Privilege Access: {}
+autoColor:
+  User Management:
+    RBAC:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(75, 100%, 70%)'
+    Privilege Access:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(315, 100%, 70%)'
+  Communication:
+    C2N SSL:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(90, 100%, 70%)'
+    N2N SSL:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(105, 100%, 70%)'
+  License:
+    Apache-2.0:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(120, 100%, 70%)'
+    MIT:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(135, 100%, 70%)'
+    MPL-2.0:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(150, 100%, 70%)'
+  Scalability:
+    Cluster:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(165, 100%, 70%)'
+    highly-scalable:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(180, 100%, 70%)'
+  Availability:
+    highly available:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(195, 100%, 70%)'
+    highly-available:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(210, 100%, 70%)'
+    Replication:
+      color: '#ffff00'
+      backgroundColor: 'hsl(225, 100%, 70%)'
+  Latency:
+    low:
+      color: '#ffff00'
+      backgroundColor: 'hsl(240, 100%, 70%)'
+  Features:
+    Close to SQL:
+      color: '#ffff00'
+      backgroundColor: 'hsl(255, 100%, 70%)'
+    Row store:
+      color: '#ffff00'
+      backgroundColor: 'hsl(270, 100%, 70%)'
+    Tag Support:
+      color: '#ffff00'
+      backgroundColor: 'hsl(285, 100%, 70%)'
+    TSDB:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(300, 100%, 70%)'
+autoCitation: {}
