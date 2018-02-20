@@ -1,10 +1,8 @@
 # Ultimate THING Comparison
 
-[![Build Status](https://travis-ci.org/example.com/ultimate-THING-comparison.svg?branch=master)](https://travis-ci.org/example.com/ultimate-THING-comparison)
+[![Build Status](https://travis-ci.org/kleinech/database-comparison.svg?branch=master)](https://travis-ci.org/kleinech/database-comparison)
 
-This is an ultimate comparison of THINGs.
-
-To run this example, please take a look at the [README.md](../../README.md)
+This is an ultimate comparison of Databases.
 
 ## Ultimate-THING-Comparison Element Specification
 
