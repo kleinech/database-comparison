@@ -2,14 +2,17 @@
 InfluxDB is a data store for storing timestamped data.
 
 ## Scalability
-- Cluster
+- highly-scalable
+    - Clustering supported for commercial product
     - Consists of Data nodes and Meta nodes. 
     - Meta nodes expose HTTP API used for managing server nodes.
-    - Data nodes communicate with each other and replicate data qnd query each other. 
+    - Data nodes communicate with each other and replicate
+      data qnd query each other. 
 
 ## Availability
-- highly available
-    - Meta or Data node can fail in an InfluxDB cluster without reducing the availability.
+- highly-available
+    - Meta or Data node can fail in an InfluxDB cluster without 
+      reducing the availability.
 
 ## Latency
 - low
