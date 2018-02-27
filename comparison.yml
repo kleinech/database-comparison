@@ -2,7 +2,7 @@ title: Database-Comparison
 subtitle: Comparison of Databases
 selectTitle: Criteria
 tableTitle: Comparison of Examples
-repository: 'https://github.com/ultimate-comparisons/ultimate-comparison-BASE.git'
+repository: 'https://github.com/kleinech/database-comparison.git'
 details:
   header:
     nameRef: id
@@ -11,7 +11,7 @@ details:
     title: Description
     bodyRef: description
 citation:
-  csl: acm-siggraph.csl
+  csl: apa.csl
   bib: literature.bib
 criteria:
   - id:
@@ -23,7 +23,7 @@ criteria:
   - description:
       name: Description
       search: false
-      detail: false
+      detail: true
       table: false
       type: markdown
   - Scalability:
@@ -31,15 +31,21 @@ criteria:
       placeholder: Select scalability of ...
       andSearch: false
       type: label
+      values:
+        highly-scalable:
+          description: Database is highly scalable
   - Availability:
       type: label
+      values:
+        Replication:
+          description: Database supports replication of data
   - Latency:
       type: label
   - User Management:
       type: label
       values:
         RBAC:
-          description: Role based access constrol
+          description: Role based access control
   - Communication:
       type: label
       values:
@@ -65,15 +71,6 @@ criteria:
         MPL-2.0:
           description: '[MPL-2.0](https://spdx.org/licenses/MPL-2.0.html)'
 autoCriteria:
-  Scalability:
-    values:
-      highly-scalable: {}
-      Cluster: {}
-  Availability:
-    values:
-      Replication: {}
-      highly available: {}
-      highly-available: {}
   Latency:
     values:
       low: {}
@@ -83,66 +80,80 @@ autoCriteria:
       Close to SQL: {}
       TSDB: {}
       Tag Support: {}
+  Availability:
+    values:
+      highly-available: {}
   User Management:
     values:
       Privilege Access: {}
+autoCitation:
+  Cockcroft2011:
+    index: 0
+    value: >-
+      Cockcroft, A., &#38; Sheahan, D. (2011). Benchmarking Cassandra
+      Scalability on AWS — Over a million writes per second. Retrieved from
+      https://medium.com/netflix-techblog/benchmarking-cassandra-scalability-on-aws-over-a-million-writes-per-second-39f45f066c9e
+  Strickland2014:
+    index: 1
+    value: >-
+      Strickland, R. (2014). Cassandra High Availability. Packt Publishing.
+      Retrieved from https://www.packtpub.com/books/content/replication
 autoColor:
+  Scalability:
+    highly-scalable:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(135, 100%, 70%)'
   User Management:
     RBAC:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(75, 100%, 70%)'
+      backgroundColor: 'hsl(150, 100%, 70%)'
     Privilege Access:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(315, 100%, 70%)'
+      backgroundColor: 'hsl(15, 100%, 70%)'
+    Admin and non admin users:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(75, 100%, 70%)'
+    Admin can grant READ or WRITE access to users:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(90, 100%, 70%)'
   Communication:
     C2N SSL:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(90, 100%, 70%)'
+      backgroundColor: 'hsl(165, 100%, 70%)'
     N2N SSL:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(105, 100%, 70%)'
+      backgroundColor: 'hsl(180, 100%, 70%)'
   License:
     Apache-2.0:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(120, 100%, 70%)'
+      backgroundColor: 'hsl(195, 100%, 70%)'
     MIT:
       color: '#0d0d0d'
-      backgroundColor: 'hsl(135, 100%, 70%)'
-    MPL-2.0:
-      color: '#0d0d0d'
-      backgroundColor: 'hsl(150, 100%, 70%)'
-  Scalability:
-    Cluster:
-      color: '#0d0d0d'
-      backgroundColor: 'hsl(165, 100%, 70%)'
-    highly-scalable:
-      color: '#0d0d0d'
-      backgroundColor: 'hsl(180, 100%, 70%)'
-  Availability:
-    highly available:
-      color: '#0d0d0d'
-      backgroundColor: 'hsl(195, 100%, 70%)'
-    highly-available:
-      color: '#0d0d0d'
       backgroundColor: 'hsl(210, 100%, 70%)'
-    Replication:
+    MPL-2.0:
       color: '#ffff00'
       backgroundColor: 'hsl(225, 100%, 70%)'
+  Availability:
+    highly-available:
+      color: '#ffff00'
+      backgroundColor: 'hsl(240, 100%, 70%)'
+    Replication:
+      color: '#ffff00'
+      backgroundColor: 'hsl(255, 100%, 70%)'
   Latency:
     low:
       color: '#ffff00'
-      backgroundColor: 'hsl(240, 100%, 70%)'
+      backgroundColor: 'hsl(270, 100%, 70%)'
   Features:
     Close to SQL:
       color: '#ffff00'
-      backgroundColor: 'hsl(255, 100%, 70%)'
-    Row store:
-      color: '#ffff00'
-      backgroundColor: 'hsl(270, 100%, 70%)'
-    Tag Support:
-      color: '#ffff00'
       backgroundColor: 'hsl(285, 100%, 70%)'
-    TSDB:
+    Row store:
       color: '#0d0d0d'
       backgroundColor: 'hsl(300, 100%, 70%)'
-autoCitation: {}
+    Tag Support:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(315, 100%, 70%)'
+    TSDB:
+      color: '#0d0d0d'
+      backgroundColor: 'hsl(330, 100%, 70%)'
